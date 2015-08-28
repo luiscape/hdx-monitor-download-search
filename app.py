@@ -44,15 +44,12 @@ def QueryParseAndProvideLink():
   #   )
 
   request_data = request.get_json()
-  print request_data
 
   if 'fields' in request_data.keys():
     query_fields = request_data['fields']
 
   else:
     query_fields=['id', 'title']
-
-  print query_fields
 
   #
   # Query CKAN, parse results,
