@@ -27,11 +27,11 @@ class TestStore(unittest.TestCase):
   def test_store_with_right_data_works(self):
     data = Query.QueryHDX(query='ebola', test=True)
     result = Parse.ParseHDXQuery(data=data, fields=['name', 'title'])
-    assert Store.StoreCSV(data=result) == True
+    assert Store.StoreCSV(data=result)['success'] == True
 
   def test_store_with_wrong_path_fails(self):
     data = Query.QueryHDX(query='ebola', test=True)
     result = Parse.ParseHDXQuery(data=data, fields=['name', 'title'])
-    assert Store.StoreCSV(data=result, path='foo/bar.csv') == False
+    assert Store.StoreCSV(data=result, path='foo/bar.csv')['success'] == False
 
 
