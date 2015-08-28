@@ -8,7 +8,7 @@ def ParseHDXQuery(data=None, fields=None):
     print 'Data not provided. Parsing failed.'
     return False
 
-  print 'Parsing %s results.' % data['result']['count']
+  print 'Parsing %s results.' % len(data['result']['results'])
 
   #
   # Parsing the fields
