@@ -4,4 +4,4 @@
 # Running tests with Nose.
 #
 source venv/bin/activate
-nosetests --with-coverage -d
+nosetests --with-coverage -d -v

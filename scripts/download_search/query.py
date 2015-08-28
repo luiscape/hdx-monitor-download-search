@@ -3,18 +3,28 @@
 
 import requests
 
-def QueryHDX(query=None, field='title', test=False):
+def QueryHDX(query=None, ckan='https://data.hdx.rwlabs.org', field='title', test=False):
   '''Makes search query to HDX.'''
 
   if query == None:
     print 'Please provide search query.'
     return False
 
+  if query == '':
+    print 'Fetching all datasets.'
+
   #
   # Builds query string.
   #
-  ckan = 'https://data.hdx.rwlabs.org'
-  search = ckan + '/api/3/action/package_search?&fq=' + field + ':' + query
+  print 'Making query: %s' % query
+
+  if query == '':
+    print 'Fetching all datasets.'
+    search = ckan + '/api/3/action/package_search?&fq='
+
+  else:
+    search = ckan + '/api/3/action/package_search?&fq=' + field + ':' + query
+
 
   #
   # Adding limit to search.
@@ -22,7 +32,7 @@ def QueryHDX(query=None, field='title', test=False):
   if test:
     search += '&rows=1'
   else:
-    search += '&rows=1000'
+    search += '&rows=3000'
 
   #
   # Makes query.
