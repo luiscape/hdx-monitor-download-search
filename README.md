@@ -11,7 +11,7 @@ $ curl -X POST \
   -H "Content-Type: application/json" \
   -d '{"query":"ebola", "fields": ["id", "title", "maintainer"]}' \
   localhost:3000/
-```.
+```
 
 The result will be a JSON with the path of the downloaded file:
 ```json
