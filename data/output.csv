@@ -1,2 +1,25 @@
-name,title
-ebola-cases-2014,Number of Ebola Cases and Deaths in Affected Countries
+maintainer,id,title
+godfrey,0d089fa0-3567-4b01-9c03-39d340ff34e3,Number of Ebola Cases and Deaths in Affected Countries
+pss-ocha,bdb0c7df-4af6-491c-bf40-71f81baf0760,Financial tracking of private sector contributions Ebola 2014
+benmorse,ec107887-e477-43ad-acfd-10b7104e7645,Data for Ebola Recovery
+javier,80a80c09-624b-43c8-a331-745b83fcfe58,Funding Coverage of the Ebola Virus Outbreak Emergency
+luiscape,daa030f2-1a15-480a-88a9-786345fc74c7,Topline Ebola Outbreak Figures
+steve_unmeer,bb38d54b-59a1-4b95-b04f-efc98b120230,Sierra Leone NERC Ebola Care Facilities Master List
+unmeer-im,c21ff3d6-b8e3-4987-a566-e770c5983711,3W Ebola Sierra Leone
+sekou,b234742b-0089-46d2-bd86-43696afb0277,Guinea Ebola Community Care Centre
+godfrey,8bd9d9f8-6259-4b29-9acb-7e7d479da3e2,Ebola outbreaks before 2014
+ocharowca,f326cf9d-8e37-437d-9b85-5ea3d36e3d39,"Sub-national time series data on Ebola cases and deaths in Guinea, Liberia, Sierra Leone, Nigeria, Senegal and Mali since March 2014"
+luiscape,417c7202-fe32-4f60-b54b-d06d4d6e18c1,Guinea 3W Ebola Response
+UNMEER IM,33b20dce-dae1-48b0-bc71-6b728321711e,Ebola Treatment Centers or Units (ETCs or ETUs)
+OCHA ROWCA,921f7677-4248-451b-85b3-ed0f42d43acf,Sub-national Data of Confirmed Cumulative Ebola by Gender
+what3words,65990bfa-b571-4c97-a66b-312337b569a7,Ebola Treatment Units - 3 Word Addresses
+Wael Attia,abc5eb9b-1e59-446c-adde-e43df4ac7e82,Guinea - Ebola: WFP VAM Food Security Reduced Coping Strategies Index and Price Data
+WHO - ebolamaps@who.int,de64956e-4333-4101-b470-1a59b2a59cd3,Ebola Testing Laboratories
+InterAction,8bfd1fd0-bc71-4dda-9d0c-317cf8f6f5f8,InterAction Member Activities related to Ebola Response
+godfrey,5f2852f3-1335-40f6-98c6-86c6897f3b53,Ebola GeoNode
+UNMEER IM - unmeerim@gmail.com,7acbee6b-3a33-4d08-a0ae-232e90330c1c,Ebola Community Care Centers
+aschroeder,73b1f8e9-ae3a-4122-b046-747646f657d5,Direct Relief Ebola Materials Shipped
+Jeroen Smits,39031129-4981-45d1-b783-39137847f721,Sub-national Indicators Ebola Countries
+Wael Attia,ca381677-fbd7-4362-abf2-7927cb320722,Sierra Leone - Ebola: WFP VAM Food Security Reduced Coping Strategies Index and Price Data
+UNOCHA ROWCA,50c3ca12-d468-414d-ba46-3fb1e3d61af7,3W Dataset on the Organizations Involved in the Response to the Ebola Crisis
+,1990e989-d3f4-4555-864b-476832ebf45c,NetHope Open Humanitarian Data Repository for the West Africa Ebola outbreak
