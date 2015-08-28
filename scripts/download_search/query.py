@@ -10,11 +10,21 @@ def QueryHDX(query=None, ckan='https://data.hdx.rwlabs.org', field='title', test
     print 'Please provide search query.'
     return False
 
+  if query == '':
+    print 'Fetching all datasets.'
+
   #
   # Builds query string.
   #
   print 'Making query: %s' % query
-  search = ckan + '/api/3/action/package_search?&fq=' + field + ':' + query
+
+  if query == '':
+    print 'Fetching all datasets.'
+    search = ckan + '/api/3/action/package_search?&fq='
+
+  else:
+    search = ckan + '/api/3/action/package_search?&fq=' + field + ':' + query
+
 
   #
   # Adding limit to search.
@@ -22,7 +32,7 @@ def QueryHDX(query=None, ckan='https://data.hdx.rwlabs.org', field='title', test
   if test:
     search += '&rows=1'
   else:
-    search += '&rows=1000'
+    search += '&rows=3000'
 
   #
   # Makes query.
