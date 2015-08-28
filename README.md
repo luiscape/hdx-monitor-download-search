@@ -9,7 +9,7 @@ The application takes two parameters: `query` and `fields`. The first is the que
 ```shell
 $ curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{"query":"ebola", "fields": ["id", "title", "maintainer"]}' \
+  -d '{"query":"ebola", "fields": ["id", "title", "maintainer", "creator", "metadata_created", "metadata_modified"]}' \
   localhost:3000/
 ```
 
