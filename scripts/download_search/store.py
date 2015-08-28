@@ -29,9 +29,9 @@ def StoreCSV(data=None, path='data/output.csv'):
     for row in data:
       writer.writerow(row.values())
 
-    return True
+    return { 'path': path, 'success': True }
 
   except Exception as e:
     print e
     print 'Could not store CSV file.'
-    return False
+    return { 'success': False, 'message': e }

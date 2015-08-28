@@ -3,7 +3,7 @@
 
 import requests
 
-def QueryHDX(query=None, field='title', test=False):
+def QueryHDX(query=None, ckan='https://data.hdx.rwlabs.org', field='title', test=False):
   '''Makes search query to HDX.'''
 
   if query == None:
@@ -13,7 +13,7 @@ def QueryHDX(query=None, field='title', test=False):
   #
   # Builds query string.
   #
-  ckan = 'https://data.hdx.rwlabs.org'
+  print 'Making query: %s' % query
   search = ckan + '/api/3/action/package_search?&fq=' + field + ':' + query
 
   #
