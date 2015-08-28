@@ -3,4 +3,20 @@ At times an user may want to download the search results on HDX as a CSV file fo
 
 [![Build Status](https://travis-ci.org/luiscape/hdx-monitor-download-search.svg)](https://travis-ci.org/luiscape/hdx-monitor-download-search) [![Coverage Status](https://coveralls.io/repos/luiscape/hdx-monitor-download-search/badge.svg?branch=master&service=github)](https://coveralls.io/github/luiscape/hdx-monitor-download-search?branch=master)
 
-**Work-in-progres**
+## Usage
+The application takes two parameters: `query` and `fields`. The first is the query you want to make. The latter are the fields you would like returned in your CSV file. The search query is made on the title fields only, as it seems to produce better results.
+
+```shell
+$ curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"query":"ebola", "fields": ["id", "title", "maintainer"]}' \
+  localhost:3000/
+```
+
+The result will be a JSON with the path of the downloaded file:
+```json
+{
+  "path": "/Users/luis/Documents/Programming/hdx-monitor/hdx-monitor-download-search/data/output.csv",
+  "success": true
+}
+```
