@@ -16,7 +16,8 @@ $ curl -X POST \
 The result will be a JSON with the path of the downloaded file:
 ```json
 {
-  "path": "/Users/luis/Documents/Programming/hdx-monitor/hdx-monitor-download-search/data/output.csv",
+  "file_name": "output_2061.csv",
+  "message": "File downloaded successfully. 25 records in file.",
   "success": true
 }
 ```
