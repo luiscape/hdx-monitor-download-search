@@ -49,9 +49,10 @@ def StoreCSV(data=None, file_name=_random_file_name()):
     else:
       return {
         'success': True,
-        'message':
-        'File downloaded successfully. {records} records in file.'.format(records=len(data)),
-        'file_name': file_name }
+        'message': 'File downloaded successfully. {records} records in file.'.format(records=len(data)),
+        'records': len(data),
+        'file_name': file_name
+        }
 
   except Exception as e:
     print e
