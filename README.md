@@ -18,6 +18,7 @@ The result will be a JSON with the path of the downloaded file:
 {
   "file_name": "output_2061.csv",
   "message": "File downloaded successfully. 25 records in file.",
+  "records": 25,
   "success": true
 }
 ```
