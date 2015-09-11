@@ -5,6 +5,7 @@ import json
 from flask import *
 from scripts.download_search import *
 
+__version__ = 'v.0.1.1'
 
 app = Flask(__name__)
 
