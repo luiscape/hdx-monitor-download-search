@@ -24,6 +24,8 @@ The result will be a JSON with the path of the downloaded file:
 ```
 
 ## Docker Usage
+[![](https://badge.imagelayers.io/luiscape/hdx-monitor-download-search:latest.svg)](https://imagelayers.io/?images=luiscape/hdx-monitor-download-search:latest 'Get your own badge on imagelayers.io')
+
 When running the image, make sure you mount a volume to the data folder:
 
 ```shell
