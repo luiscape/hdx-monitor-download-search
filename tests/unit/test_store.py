@@ -32,6 +32,6 @@ class TestStore(unittest.TestCase):
   def test_store_with_wrong_path_fails(self):
     data = Query.QueryHDX(query='ebola', test=True)
     result = Parse.ParseHDXQuery(data=data, fields=['name', 'title'])
-    assert Store.StoreCSV(data=result, path='foo/bar.csv')['success'] == False
+    assert Store.StoreCSV(data=result, file_name='foo/bar.csv')['success'] == False
 
 
