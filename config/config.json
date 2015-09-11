@@ -4,5 +4,5 @@
   "description": "Service that turns a CKAN search query into a downloadable CSV file.",
   "repository": "https://github.com/luiscape/hdx-monitor-download-search",
   "CkanInstance": "https://data.hdx.rwlabs.org",
-  "port": 3000
+  "port": 1000
 }
