@@ -22,3 +22,13 @@ The result will be a JSON with the path of the downloaded file:
   "success": true
 }
 ```
+
+## Docker Usage
+When running the image, make sure you mount a volume to the data folder:
+
+```shell
+$ docker run -d \
+  -v ./download_search_data:/hdx-monitor-download-search/data \
+  --name download_search \
+  luiscape/hdx-monitor-download-search:latest
+```
